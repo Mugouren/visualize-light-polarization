@@ -1,1 +1,2 @@
-visualize-light-polarization
+# visualize light polarization
+1. tightly focused azimuthal polarized light
