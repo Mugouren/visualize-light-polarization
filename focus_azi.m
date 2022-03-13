@@ -1,5 +1,5 @@
 t = linspace(0,1,270);
-l = 6;  % vortex charge
+l = 4;  % vortex charge
 
 Show_Each_Ray = 1;
 
@@ -24,7 +24,7 @@ if Show_Each_Ray == 1
     rays = quiver(tmp,tmp,tmp,tmp,m/2,'-r');
 end
 
-filename=['focus_azi_',num2str(l),'.gif']; fps=30;
+filename=['.\temp\focus_azi_',num2str(l),'.gif']; fps=30;
 
 
 for k = 2:length(t)
