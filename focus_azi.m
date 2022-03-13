@@ -1,9 +1,9 @@
 t = linspace(0,1,270);
-l = -1;  % vortex charge
+l = 6;  % vortex charge
 
 Show_Each_Ray = 1;
 
-m = 60; % number of rays
+m = 120; % number of rays
 theta = linspace(0,2*pi-2*pi/m,m);  % position of light ray on a ring aperture
 delay = l*theta; % phase delay due to vortex phase plate
 theta = theta + pi/2;  % direction of polarization
