@@ -1,5 +1,11 @@
 # visualize light polarization
 
+
+
+<img src=".\result\overview.png" style="width: 100%" />
+
+
+
 1. linear polarized light
 
    run ‘linear.m’ :
