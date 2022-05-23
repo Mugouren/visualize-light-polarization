@@ -1,9 +1,9 @@
 t = linspace(0,1,270);
-l = 4;  % vortex charge
+l = 1;  % vortex charge
 
 Show_Each_Ray = 1;
 
-m = 120; % number of rays
+m = 25; % number of rays
 theta = linspace(0,2*pi-2*pi/m,m);  % position of light ray on a ring aperture
 delay = l*theta; % phase delay due to vortex phase plate
 theta = theta + pi/2;  % direction of polarization
@@ -25,7 +25,9 @@ if Show_Each_Ray == 1
 end
 
 filename=['.\temp\focus_azi_',num2str(l),'.gif']; fps=30;
-
+if ~exist('.\temp\','dir')
+        mkdir('.\temp\');
+end
 
 for k = 2:length(t)
     rho = E0*cos(2*pi*t(k)+delay);
